@@ -34,6 +34,13 @@ class Contact extends CI_Controller
     $this->load->view("layout/footer2");
   }
 
+  public function clone()
+  {
+    $this->load->view("layout/headerawal");
+    $this->load->view("user/ContactUsAwal");
+    $this->load->view("layout/footerawal");
+  }
+
 }
 
 
