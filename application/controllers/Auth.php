@@ -115,4 +115,11 @@ class Auth extends CI_Controller
     redirect('Auth');
   }
 
+  public function login()
+  {
+    $this->session->unset_userdata('email');
+    $this->session->unset_userdata('role');
+    redirect('Auth');
+  }
+
 }
