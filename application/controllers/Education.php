@@ -35,6 +35,14 @@ class Education extends CI_Controller
     $this->load->view("layout/footer2");
   }
 
+   public function clone()
+  {
+    $title="Education";
+    $this->load->view("layout/headerawal");
+    $this->load->view("user/Education");
+    $this->load->view("layout/footerawal");
+  }
+
 }
 
 
